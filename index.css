@@ -1,21 +1,196 @@
-.inner {
-  padding: 50px !important;
-  padding-top: 70px !important;
+body {
+  padding: 100px;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
-.btn {
-  background-color: red !important;
+label {
+  font-size: 15px;
+}
+.form-val {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#validationCustom03 {
+  height: 100px;
 }
 
+.form-control {
+  transition: 0 !important;
+}
 .container {
-  background-color: greenyellow;
-  padding: 70px;
-  margin-top: 30px;
-  border-radius: 20px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0.8, 1);
+  width: 700px !important;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+.fname,
+.lname,
+.postition,
+.department,
+.email,
+.college,
+.previous,
+.address {
+  margin-bottom: 30px !important;
+}
+
+.invalid-tooltip {
+  margin-bottom: 20px !important;
+}
+.btn {
+  margin-top: 10px;
+}
+
+.valid-feedback.feedback-icon,
+.invalid-feedback.feedback-icon {
+  position: absolute;
+  width: auto;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 0;
+}
+.h-tag {
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  padding: 30px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 40px;
+}
+.edu-tag,
+.work {
+  font-size: 30px;
+}
+.work {
+  margin-bottom: 30px;
+}
+.job {
+  height: 150px;
+}
+.custom-control {
+  padding-right: 20px !important;
+}
+#level {
+  padding-right: 30px;
+  font-weight: bolder;
+}
+.skill {
+  margin-top: 20px;
+}
+.doc,
+.location-pre {
+  font-size: 20px;
+}
+#validationCustom0234 {
+  height: 150px;
+}
+.ref,
+.port,
+.course,
+.additional {
+  font-size: 30px;
+}
+.location {
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .container {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin: 10px !important;
+
+    width: 500px !important;
   }
+}
+
+/**/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: orange;
+  color: #ffffff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 10px !important;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: red;
+  border-radius: 10px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: orange;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: red;
 }
